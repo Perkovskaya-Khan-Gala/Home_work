@@ -6,14 +6,18 @@
 
 int flag=1;
 string flag_S;
+string number1_S;
+int number1;
+string number2_S;
+int number2;
 do{
 Console.WriteLine("Введите первое число a:");
-string number1_S=Console.ReadLine();
-int number1=Convert.ToInt32(number1_S);
+number1_S=Console.ReadLine();
+number1=Convert.ToInt32(number1_S);
 
 Console.WriteLine("Введите второе число b:");
-string number2_S=Console.ReadLine();
-int number2=Convert.ToInt32(number2_S);
+number2_S=Console.ReadLine();
+number2=Convert.ToInt32(number2_S);
 
 if (number1>number2){Console.WriteLine($"a = {number1}, b = {number2} -> max = {number1}");}
 if (number1<number2){Console.WriteLine($"a = {number1}, b = {number2} -> max = {number2}");}
